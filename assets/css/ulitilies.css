@@ -1,0 +1,225 @@
+:root{
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary:'Roboto', sans-serif;
+
+    --color-primary: #3A38FF;
+    --color-secondary: #101041;
+    --color-third: #949293;
+    --color-fourty: #DFE2E7;
+
+    --fw-bold: 48px;
+
+}
+
+/* utilities  */
+
+.pb-70{
+    padding-bottom: 70px;
+}
+
+.pt-70{
+    padding-top: 70px;
+}
+
+.mt-60{
+    margin-top: 60px;
+}
+
+.fw-header{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-secondary);
+    font-style: var(--font-primary) !important;
+}
+
+.fw-sub-header{
+    font-size: 16px;
+    color: var(--color-third);
+}
+
+.color-gradient{
+    /* font-size: 72px; */
+    background: linear-gradient(90.55deg, #256BF4 -13.39%, #3AC1DE 99.74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc-project{
+    color: #000000;
+}
+
+.tech-stack{
+    color: #504f4f;
+    font-size: 12px;
+}
+
+body{
+    font-family: var(--font-primary);
+    background-color: #F9FBFC;
+
+}
+
+.navbar{
+    height: 100px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px) !important;
+        -webkit-backdrop-filter: blur(7px) !important;
+    
+}
+
+.navbar-brand{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn-secondary{
+    background-color: var(--color-fourty);
+    width: 135px;
+    height: 48px;
+    font-weight: bold;
+    border-radius: 50px;
+    color: var(--color-secondary);
+    border: none;
+}
+.btn-primary{
+    background-color: var(--color-primary);
+    width: 135px;
+    font-weight: bold;
+    height: 48px;
+    border-radius: 50px;
+    color: #ffffff;
+    border: none;
+}
+
+.nav-link{
+    color: var(--color-secondary);
+}
+.active{
+    color: var(--color-primary) !important;
+}
+
+.nav-link:hover{
+    color: var(--color-primary) !important;
+}
+
+.backdrop{
+    width: 470px;
+    height: 426px;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+clip-path: polygon(51% 5%, 51% 5%, 92% 30%, 92% 70%, 51% 96%, 51% 96%, 10% 70%, 10% 29%);
+border: 1px solid rgba(255, 255, 255, 0.45);
+    margin-left: 50px;
+
+}
+
+.my-name{
+    font-size: 28px;
+    font-weight: bolder;
+    color: var(--color-secondary);
+
+}
+
+.myDesc:nth-child(1){
+    color: var(--color-third);
+}
+
+.hand-shake{
+    transform-origin: right bottom;
+    width: 20px;
+    position: absolute;
+    margin-left: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    animation: hand 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes hand {
+    0%{
+        transform: rotate(-0deg);
+    }
+
+    25%{
+        transform: rotate(10deg);
+    }
+
+    50%{
+        transform: rotate(10deg);
+    }
+
+    75%{
+        transform: rotate(-10deg);
+    }
+
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+
+.myDesc:nth-child(3){
+    color: var(--color-third);
+}
+
+.img-pattern{
+    z-index: -2 !important;
+}
+
+.profile{
+    margin-left: 165px;
+}
+
+.myProfile{
+    z-index: 2;
+}
+
+.color-pallete-1{
+    color: var(--color-secondary);
+}
+
+.card{
+    font-family: var(--font-secondary);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.img-icon{
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 10px !important;
+    padding-top: 8px !important;
+}
+
+.badge{
+    padding: 10px;
+    border: none;
+    background-color: #3A38FF;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.badge-sosmed{
+    padding: 8px;
+    width: auto;
+    height: 35px;
+    border: none;
+    /* background: rgb(2,0,36); */
+    background-color: rgb(46, 245, 178);
+    opacity: 0.8;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) -10%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    color: var(--color-secondary);
+    font-family: var(--font-primary);
+    font-weight: bold;
+}
+
+.btn-socmed{
+    background: linear-gradient(90.55deg, #256BF4 -13.39%, #3AC1DE 99.74%);
+    font-family: var(--font-primary);
+    font-weight: bold;
+    height: 48px;
+    border-radius: 50px;
+    color: #ffffff;
+    border: none;
+}
+
